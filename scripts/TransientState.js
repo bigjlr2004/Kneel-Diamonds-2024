@@ -1,19 +1,19 @@
 const transientState = {
-  metalOption: 0,
-  sizeOption: 0,
-  styleOption: 0,
+  metalId: 0,
+  sizeId: 0,
+  styleId: 0,
 };
 
 export const setMetalOption = (chosenMetalOption) => {
-  transientState.metalOption = chosenMetalOption;
+  transientState.metalId = chosenMetalOption;
   console.log(transientState);
 };
 export const setStyleOption = (chosenStyleOption) => {
-  transientState.styleOption = chosenStyleOption;
+  transientState.styleId = chosenStyleOption;
   console.log(transientState);
 };
 export const setSizeOption = (chosenSizeOption) => {
-  transientState.sizeOption = chosenSizeOption;
+  transientState.sizeId = chosenSizeOption;
   console.log(transientState);
 };
 

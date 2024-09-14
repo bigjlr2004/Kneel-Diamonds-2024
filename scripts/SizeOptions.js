@@ -16,7 +16,7 @@ export const SizeOptions = async () => {
 
   const divStringArray = sizes.map((size) => {
     return `<div class="choiceOptions">
-            <input type='radio' name='sizeRadio'  value="${size.id}" />${size.carets} 
+            <input type='radio' name='sizeRadio'  value="${size.id}" />${size.carets}  Carets
     </div>`;
   });
 

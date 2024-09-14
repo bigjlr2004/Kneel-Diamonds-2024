@@ -72,46 +72,22 @@
   ],
   "orders": [
     {
-      "metalOption": 0,
-      "sizeOption": 0,
-      "styleOption": 0,
+      "metalId": 4,
+      "sizeId": 4,
+      "styleId": 2,
       "id": 1
     },
     {
-      "metalOption": 1,
-      "sizeOption": 2,
-      "styleOption": 2,
+      "metalId": 3,
+      "sizeId": 5,
+      "styleId": 1,
       "id": 2
     },
     {
-      "metalOption": 1,
-      "sizeOption": 2,
-      "styleOption": 2,
+      "metalId": 2,
+      "sizeId": 2,
+      "styleId": 2,
       "id": 3
-    },
-    {
-      "metalOption": 1,
-      "sizeOption": 3,
-      "styleOption": 2,
-      "id": 4
-    },
-    {
-      "metalOption": 1,
-      "sizeOption": 3,
-      "styleOption": 2,
-      "id": 5
-    },
-    {
-      "metalOption": 1,
-      "sizeOption": 2,
-      "styleOption": 1,
-      "id": 6
-    },
-    {
-      "metalOption": 2,
-      "sizeOption": 1,
-      "styleOption": 1,
-      "id": 7
     }
   ]
 }
