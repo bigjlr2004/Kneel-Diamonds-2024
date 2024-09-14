@@ -1,4 +1,6 @@
 import { MetalOptions } from "./MetalOptions.js";
+import { Orders } from "./Orders.js";
+import { SaveSubmission } from "./SaveOrder.js";
 import { SizeOptions } from "./SizeOptions.js";
 import { StyleOptions } from "./StyleOptions.js";
 
@@ -6,6 +8,8 @@ const render = async () => {
   const metalOptionsHTML = await MetalOptions();
   const styleOptionsHTML = await StyleOptions();
   const sizeOptionsHTML = await SizeOptions();
+  const saveOrder = await SaveSubmission();
+  const OrdersList = await Orders();
 
   const container = document.querySelector("#main");
 
@@ -30,16 +34,23 @@ const render = async () => {
         </article>
 
         <article class="order">
+               ${saveOrder}
 
         </article>
 
-        <article class="customOrders">
+        <article class="customOrders options">
             <h2>Custom Jewelry Orders</h2>
+            <div>
+                ${OrdersList}
+            </div>
 
-        </article>
-    `;
-
+        </article>`;
   container.innerHTML = composedHTML;
 };
 
 render();
+
+document.addEventListener("newOrder", (event) => {
+  console.log("State of data has changed. Regenerating HTML...");
+  render();
+});
